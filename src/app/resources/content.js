@@ -6,15 +6,15 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Developer, Designer, Data Scientist",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "craig.putzstuck@kokorolabs.tech",
+  location: "US/Eastern", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", ], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -30,12 +30,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/argounova",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/CraigPutzstuck",
   },
   {
     name: "X",
@@ -90,14 +90,12 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Passionate data enthusiast with a strong foundation in full stack web development. Fascinated with how technology can uncover insights and drive informed decision making. I aim to deepen my understanding of statistical modeling, machine learning algorithms, and data visualization techniques. I'm particularly interested in applying these tools to real-world problems, such as predictive analytics, natural language processing, and AI-powered solutions. My background in web development provides me with a unique perspective on data-driven applications. Proficient in languages like Python and R, as well as front-end technologies like React. This enables me to not only analyze data but also create interactive and user-friendly data visualizations and dashboards.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Work Experience",
     experiences: [
       {
@@ -147,17 +145,17 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Colorado State University",
+        description: <>Studied business analytics.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "University of Central Florida",
+        description: <>Studied MERN full stack web development.</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
