@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Developer, Designer, Data Scientist",
+  role: "Data Science & Strategy, Full Stack Dev",
   avatar: "/images/avatar.jpg",
   email: "craig.putzstuck@kokorolabs.tech",
   location: "US/Eastern", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -95,45 +95,52 @@ const about = {
     ),
   },
   work: {
-    display: false, // set to false to hide this section
+    display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
+        company: "Kokoro Labs",
         timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        role: "Data Analyst, Full Stack Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Engineered Python-based dashboards and MVPs 55% faster, boosting client acceptance by 28%.
+            Architected reusable React components, doubling full-stack app scalability and efficiency. Cut
+            client reporting time by 60% with interactive dashboards using Tableau, SQL, and GA. Upgraded
+            web solutions for 5+ businesses, raising site engagement by 40% via responsive design and e-commerce.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Deployed end-to-end web applications, handling both front-end interfaces and back-end logic,
+            utilized reusable components and streamlined data architecture to improve development speed
+            by 35% and reduce client onboarding time by nearly 30%. Integrated secure authorization flows,
+            implemented encryption, and managed both relational (PostgreSQL) and non-relational
+            (MongoDB) databases. Collaborated directly with clients and teammates to deliver scalable,
+            secure solutions in fast-paced sprints.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Westshore Home",
+        timeframe: "2020 - 2022",
+        role: "Warehouse Operations and Data Manager",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Integrated ERP systems and inventory tracking tools to streamline workflows and reduce discrepancies by over 55%. Leveraged data
+            analysis to optimize stock levels, improve fulfillment speed by 25%, and support real-time
+            decision-making resulting in fewer stock outs and increased client satisfaction.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Orchestrated cross-functional warehouse operations, managed logistics, vendor coordination, and comprehensive teams while implementing process improvements
+            through technology- driven solutions.
           </>,
         ],
         images: [],
@@ -142,7 +149,7 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
         name: "Eastern University",
@@ -159,12 +166,12 @@ const about = {
     ],
   },
   technical: {
-    display: false, // set to false to hide this section
-    title: "Technical skills",
+    display: true, // set to false to hide this section
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Next.js & React",
+        description: <>Developing next gen web applications with Next.js + React + MongoDB.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -173,8 +180,15 @@ const about = {
             width: 16,
             height: 9,
           },
+        ],
+      },
+      {
+        title: "SQL & RDBMS",
+        description: <>Architecting efficient and accurate relational database management systems.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
           {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/projects/project-02/cover-02.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -182,12 +196,12 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "R & SAS",
+        description: <>Analyzing the past, predicting the future. Complex data to clear insights.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/projects/project-02/cover-03.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
