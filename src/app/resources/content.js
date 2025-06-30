@@ -55,16 +55,16 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Empowering Data Informed Decisions</>,
   featured: {
-    display: true,
+    display: false,
     title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Craig, an analytics-driven specialist who transforms complex data challenges into clean, actionable insights for meaningful outcomes.
+      {/* <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/> */}
     </>
   ),
 };
@@ -82,7 +82,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -145,12 +145,16 @@ const about = {
     title: "Studies",
     institutions: [
       {
+        name: "Eastern University",
+        description: <>M.S. in Data Science / MBA Dual Degree | Exp. 2027</>,
+      },
+      {
         name: "Colorado State University",
-        description: <>Studied business analytics.</>,
+        description: <>B.S. in MIS & Business Analytics | 2025</>,
       },
       {
         name: "University of Central Florida",
-        description: <>Studied MERN full stack web development.</>,
+        description: <>Certificate in MERN full stack web development | 2022</>,
       },
     ],
   },
