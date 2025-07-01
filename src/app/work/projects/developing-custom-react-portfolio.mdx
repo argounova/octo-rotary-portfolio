@@ -1,0 +1,44 @@
+---
+title: "Developing a Custom Portfolio Using Markdown with React and Next.js"
+publishedAt: "2025-02-28"
+summary: "Development of a Next.js application featuring React, Framer Motion, Markdown, and styled with Material UI and Emotion."
+images:
+  - "/images/projects/project-03/cover-01.jpg"
+  - "/images/projects/project-03/cover-02.mp4"
+  - "/images/projects/project-03/cover-03.jpg"
+  - "/images/projects/project-03/cover-04.jpg"
+  - "/images/projects/project-03/cover-05.jpg"
+team:
+  - name: "Craig Putzstuck"
+    role: "Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/CraigPutzstuck/"
+---
+
+## Overview
+
+A fully responsive developer portfolio showcasing personal and professional work across web, data, and 3D domains, built using Next.js with a focus on maintainability and performance.
+
+## Key Features
+
+- **Markdown-Based Content Management**: Portfolio projects are written in Markdown and parsed with gray-matter, allowing for fast updates without touching component code.
+- **Responsive, Thematic UI**: Styled using MUI, Emotion, and custom fonts, the UI adapts fluidly across breakpoints while maintaining a consistent visual identity.
+- **Interactive Animations**: Framer Motion is used to add subtle transitions and page animations that enhance interactivity without compromising load time.
+- **Client-Side Email Handling**: EmailJS handles form submission directly from the browser, eliminating the need for a custom backend or API route.
+- **Component Reusability & Scalability**: Custom card layouts and dynamic routing allow new projects to be added with minimal configuration, promoting scalability.
+
+## Technologies Used
+
+- **Gray Matter**: Parsed Markdown files for project metadata and content, enabling a blog-style system without a CMS.
+- **Next.js**: Provided hybrid static/server-side rendering and routing for a performant and SEO-aware structure.
+- **React.js**: Powered the component architecture and dynamic state management for smooth interactivity.
+- **Emotion + MUI**: Enabled custom theming and responsive layout using styled components integrated with Material UI.
+- **Framer Motion**: Added lightweight animation transitions across routes and UI elements for a polished user experience.
+
+## Challenges and Learnings
+
+Integrating Emotion with MUI required fine-tuning theme inheritance and resolving styling conflicts during SSR. Setting up a Markdown-based content pipeline was initially error-prone, but it significantly streamlined content updates once established. Balancing animation performance with responsiveness taught me how to optimize motion values and limit unnecessary re-renders. The experience also reinforced best practices around accessibility and semantic structure within animated UIs.
+
+## Outcome
+
+The result is a fast, flexible, and easily maintainable portfolio site that showcases a variety of projects without repetitive coding. It serves as a working demonstration of both my technical stack and my approach to scalable front-end architecture and design systems.

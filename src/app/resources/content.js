@@ -170,6 +170,19 @@ const about = {
     title: "Technical Skills",
     skills: [
       {
+        title: "R & SAS",
+        description: <>Analyzing the past, predicting the future. Complex data to clear insights.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/tech-skills/cover-03.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
         title: "Next.js & React",
         description: <>Developing next gen web applications with Next.js + React + MongoDB.</>,
         // optional: leave the array empty if you don't want to display images
@@ -196,12 +209,12 @@ const about = {
         ],
       },
       {
-        title: "R & SAS",
-        description: <>Analyzing the past, predicting the future. Complex data to clear insights.</>,
+        title: "Python",
+        description: <>From scripts to insights. Python powers analysis and machine learning.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/tech-skills/cover-03.jpg",
+            src: "/images/projects/tech-skills/cover-04.png",
             alt: "Project image",
             width: 16,
             height: 9,
