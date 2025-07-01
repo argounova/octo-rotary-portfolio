@@ -1,0 +1,44 @@
+---
+title: "Creating a Browser-Based Weather Tool Using OpenWeather API, JavaScript and Local Storage"
+publishedAt: "2024-07-18"
+summary: "An interactive, browser-based weather dashboard that provides current conditions and a 5-day forecast using the OpenWeather API. Built with HTML, CSS, Bootstrap, and JavaScript, this app dynamically displays data based on user input while maintaining a recent search history via localStorage."
+images:
+  - "/images/projects/project-04/cover-01.png"
+  - "/images/projects/project-04/cover-02.png"
+  - "/images/projects/project-04/cover-03.png"
+  - "/images/projects/project-04/cover-04.png"
+  - "/images/projects/project-04/cover-05.png"
+team:
+  - name: "Craig Putzstuck"
+    role: "Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/CraigPutzstuck/"
+---
+
+## Overview
+
+The dashboard allows users to search for a city or ZIP code and instantly view real-time weather data, including temperature, humidity, wind speed, and sky conditions. Leveraging external APIs and dynamic DOM manipulation, the app updates the UI without reloading the page and persists recent searches for a seamless UX. The project demonstrates core frontend development skills including API integration, event-driven architecture, and responsive UI layout.
+
+## Key Features
+
+- **Location-Based Search**: Users can enter a city or ZIP code to fetch relevant weather data, with error handling for invalid inputs.
+- **Real-Time Weather Display**: Current weather conditions are fetched using OpenWeather’s One Call API and rendered dynamically.
+- **5-Day Forecast Cards**: Forecast data for the next five days is displayed with icons, temperature, humidity, and wind speed.
+- **Search History with localStorage**: Recent search terms are stored and clickable for quick repeat queries without typing.
+- **Responsive Bootstrap Layout**: Grid-based layout adapts to various screen sizes for mobile and desktop compatibility.
+
+## Technologies Used
+
+- **JavaScript (ES6+)**: Core logic including fetch requests, DOM manipulation, and event listeners.
+- **OpenWeather API**: Provided geolocation and forecast data for both current and future conditions.
+- **Bootstrap 4**: Enabled fast layout prototyping with responsive grids and styled components.
+- **jQuery**: Assisted in dynamic DOM updates and event handling.
+- **localStorage**: Persisted user search history for improved usability and session continuity.
+
+## Challenges and Learnings
+
+One of the biggest challenges was coordinating multiple API calls — first for geolocation, then for weather data — while maintaining performance and reliability. Building a dynamic, DOM-driven interface without a framework sharpened my vanilla JavaScript skills and reinforced the importance of modular code and reusable functions. I also learned to handle edge cases such as API errors, missing values, and user experience flows like keyboard input vs. button clicks.
+
+## Outcome
+
+The result is a clean, user-friendly weather dashboard that demonstrates real-time data handling, dynamic UI generation, and persistent state management. It strengthened my confidence working with third-party APIs, asynchronous JavaScript, and DOM-driven interfaces — skills directly applicable to frontend and full-stack development.
