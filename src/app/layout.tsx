@@ -47,6 +47,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       )}
     >
       <head>
+        <link rel="icon" href="/favicon.ico" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
