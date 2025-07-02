@@ -1,0 +1,44 @@
+---
+title: "Builing an Interactive Dashboard to Visualize MoTeC Telemetry from iRacing"
+publishedAt: "2025-06-25"
+summary: "This project features a Python-based dashboard built using Dash and Plotly to analyze telemetry data captured from iRacing via MoTeC. The app provides interactive parameter selection, visual feedback, and session metadata presentation, allowing deep inspection of vehicle performance over time.."
+images:
+  - "/images/projects/project-06/cover-01.png"
+  - "/images/projects/project-06/cover-02.mp4"
+  - "/images/projects/project-06/cover-03.png"
+  - "/images/projects/project-06/cover-04.png"
+  - "/images/projects/project-06/cover-05.png"
+team:
+  - name: "Craig Putzstuck"
+    role: "Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/CraigPutzstuck/"
+---
+
+## Overview
+
+Telemetry from a 20-minute stint in a Porsche 718 GT4 at Daytona was recorded through iRacing and exported from MoTeC i2 as a structured CSV file. The dashboard parses MoTeC-formatted headers, units, and session metadata to dynamically generate parameter options and statistics. Designed as a foundation for motorsports engineers, sim racers, and data analysts, the app enables exploration of key performance indicators such as speed, throttle, gear position, and suspension data.
+
+## Key Features
+
+- **Automated CSV Parsing**: Extracted metadata, headers, and units from MoTeC CSV exports using Python I/O and pandas.
+- **Telemetry Channel Selection**: Users can select from valid numeric telemetry parameters via a dropdown menu.
+- **Statistical Summary Output**: The app displays mean, min, max, standard deviation, and sample count for the selected channel.
+- **Dynamic Time Series Graphing**: Line plots are generated with Plotly based on user-selected telemetry channels.
+- **Responsive Web Interface**: Built with Dash and Bootstrap to ensure mobile and desktop compatibility.
+
+## Technologies Used
+
+- **Dash**: Enabled interactive app structure with reactive callbacks and modular layout.
+- **Plotly Express**: Rendered high-performance line graphs for visual telemetry analysis.
+- **Pandas**: Used to load, parse, and analyze the raw telemetry data with statistical summaries.
+- **Bootstrap (via dash-bootstrap-components)**: Provided layout styling and responsive grid components.
+- **MoTeC i2 + iRacing**: Supplied structured telemetry export used as the dataset for analysis.
+
+## Challenges and Learnings
+
+Parsing MoTeC telemetry data required custom handling to separate metadata, headers, and units from the main data block. Ensuring valid channel selection involved programmatically filtering numeric-only columns and mapping units dynamically. Managing user interactivity with Dash callbacks taught me how to streamline app logic and improve responsiveness in a data-rich environment.
+
+## Outcome
+
+The dashboard provides a clear, modular tool for analyzing racing telemetry. It can be adapted to other cars, tracks, or sessions and serves as a foundation for more advanced motorsports analytics including stint comparisons, tire degradation modeling, or fuel usage tracking.

@@ -58,8 +58,8 @@ const home = {
   headline: <>Empowering Data Informed Decisions</>,
   featured: {
     display: true,
-    title: <>Featured project: <strong className="ml-4">React + MongoDB Web App</strong></>,
-    href: "/work/building-web-apps-with-mongoose-and-axios",
+    title: <>Featured project: <strong className="ml-4">MoTec Telemetry Python Dashboard</strong></>,
+    href: "/work/engineered-python-dashboard",
   },
   subline: (
     <>
