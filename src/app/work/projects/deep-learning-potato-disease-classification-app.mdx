@@ -1,0 +1,44 @@
+---
+title: "Engineering a Full-Stack Deep Learning App for Real-Time Potato Leaf Disease Classification"
+publishedAt: "2024-10-22"
+summary: "This project combines a TensorFlow image classification model with a React front end and FastAPI backend to identify diseases in potato plant leaves from uploaded images. It features real-time predictions, confidence scoring, image previewing, and a responsive UI—designed for use in agricultural diagnostics or academic demonstrations."
+images:
+  - "/images/projects/deep-learning-potato-classification/cover-01.png"
+  - "/images/projects/deep-learning-potato-classification/cover-02.mp4"
+  - "/images/projects/deep-learning-potato-classification/cover-03.png"
+  - "/images/projects/deep-learning-potato-classification/cover-04.png"
+  - "/images/projects/deep-learning-potato-classification/cover-05.png"
+team:
+  - name: "Craig Putzstuck"
+    role: "Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/CraigPutzstuck/"
+---
+
+## Overview
+
+The trained model detects three leaf states—Early Blight, Late Blight, and Healthy—using transfer learning. Users can drag and drop an image file into the React interface, which then sends the image to the FastAPI server for inference. The backend reads and processes the image, feeds it to a Keras model, and returns a class label and confidence score. The UI provides immediate feedback with prediction results, loading states, and a user-friendly material design.
+
+## Key Features
+
+- **Drag-and-Drop Image Upload**: Users can drag and drop potato leaf images into the app for classification using material-ui-dropzone.
+- **TensorFlow Model Integration**: A FastAPI backend loads a Keras model and handles image classification requests.
+- **Real-Time Confidence Output**: Model predictions include confidence scores displayed in a styled table.
+- **Image Preview and State Handling**: Uploaded images are previewed with conditional rendering for result display, loading state, and reset.
+- **Responsive Material UI Layout**: Designed with Material-UI v4 for a mobile-friendly, accessible interface.
+
+## Technologies Used
+
+- **FastAPI**: Served as the lightweight, async backend API for handling file uploads and inference.
+- **TensorFlow + Keras**: Powered the image classification using a pretrained model fine-tuned for agricultural data.
+- **Axios**: Enabled asynchronous HTTP communication between the frontend and backend.
+- **Pillow + NumPy**: Used in the backend to preprocess uploaded images before feeding them into the model.
+- **React 17**: Managed frontend component logic and dynamic UI states.
+
+## Challenges and Learnings
+
+Managing image serialization across the frontend and backend required careful attention to MIME types, encoding, and FormData handling. Integrating model inference into FastAPI introduced performance considerations, especially around loading time and memory use. React useEffect and useCallback were used to control asynchronous side effects cleanly and efficiently. Styling with Material-UI involved resolving layout responsiveness across upload, preview, and result states.
+
+## Outcome
+
+The result is a fully functional, real-time plant disease classifier that can be deployed locally or in the cloud. This project showcases the integration of machine learning models into web interfaces and demonstrates the real-world application of AI in agriculture.
