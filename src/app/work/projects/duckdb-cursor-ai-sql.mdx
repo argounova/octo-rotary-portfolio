@@ -1,0 +1,47 @@
+---
+title: "Tinkering with an AI-Augmented SQL Exploration Environment Using DuckDB, Cursor, and Spotify History Data"
+publishedAt: "2025-07-03"
+summary: "This project demonstrates a modern data workflow that combines DuckDB, Cursor’s AI-assisted code generation, and Markdown-based rule definitions to enable intelligent SQL and Python development. Using a Spotify streaming history dataset, the project leverages local database querying, schema extraction to XML, and structured development rules to enable frictionless experimentation in SQL with AI iteration support."
+images:
+  - "/images/projects/duckdb-cursor-ai/cover-01.png"
+  - "/images/projects/duckdb-cursor-ai/cover-02.mp4"
+  - "/images/projects/duckdb-cursor-ai/cover-03.png"
+  - "/images/projects/duckdb-cursor-ai/cover-04.png"
+  - "/images/projects/duckdb-cursor-ai/cover-05.png"
+team:
+  - name: "Craig Putzstuck"
+    role: "Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/CraigPutzstuck/"
+---
+
+## Overview
+
+Inspired by the concept of “vibe coding” in [MotherDuck’s blog post](https://motherduck.com/blog/vibe-coding-sql-cursor/?utm_source=tldrdata), the project loads a Kaggle Spotify dataset into MotherDuck, exports it to a local DuckDB database, and extracts a structured XML schema using Python. Two Markdown-based instruction files were authored to guide Cursor AI in how to interact with the codebase—one for SQL and one for Python—specifying file patterns, style rules, commands, and best practices. These rules empower Cursor’s built-in AI to write and iterate on SQL queries directly in the editor, allowing for error correction and refinement until the queries return the correct results.
+
+
+
+## Key Features
+
+- **Schema Extraction to XML**: Parsed a DuckDB database and exported table/column definitions into an XML schema compatible with Cursor’s schema viewer - used as context for AI.
+- **Markdown-Based Dev Rules**: Created Markdown files with formatting, execution, and best practice rules for both Python and SQL development - used as context for AI.
+- **AI-Assisted SQL Iteration**: Enabled AI in Cursor to iteratively refine SQL queries using embedded rules until results are correct.
+- **SQLite-Like Local Dev with DuckDB**: Used MotherDuck for cloud ingestion and DuckDB for fast, portable local querying.
+- **Spotify Listening Data Analysis**: Powered insights from personal listening history with structured SQL queries and visual summaries.
+
+## Technologies Used
+
+- **DuckDB**: Used as a local, fast, and SQL-compliant OLAP engine for handling structured Spotify streaming data.
+- **Python 3**: Wrote a CLI tool to extract schema and generate XML using DuckDB, ElementTree, and filesystem operations.
+- **Cursor AI**: Leveraged in-editor AI assistance to write, debug, and refine SQL queries based on custom project rules.
+- **Markdown Rule Files**: Defined tooling, formatting, and execution context for Python and SQL using rule-based Markdown.
+- **MotherDuck**: Served as the initial ingestion environment and source for downloading the structured local database.
+- **SQLFluff + Ruff**: Used as linters and formatters for SQL (DuckDB dialect) and Python (PEP8-compliant) codebases.
+
+## Challenges and Learnings
+
+Extracting and structuring schema metadata into XML from a DuckDB instance required careful handling of information schema queries and type conversion. Writing Markdown-based rules that are both AI-readable and human-friendly introduced a new layer of developer guidance, which significantly enhanced Cursor’s ability to generate accurate SQL. Understanding the interplay between Cursor’s AI and its adherence to Markdown instructions gave me insight into how dev tooling can be made context-aware and truly assistive.
+
+## Outcome
+
+The project resulted in a hybrid workflow that blends declarative AI assistance with traditional coding—supporting both creative exploration and structured analysis. It showcases the integration of portable database tools, intelligent code augmentation, and developer-defined rules for code quality and reproducibility. The result is a flexible system for querying and analyzing data with human-in-the-loop iteration.
