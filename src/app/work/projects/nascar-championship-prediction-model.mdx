@@ -1,0 +1,46 @@
+---
+title: "NASCAR Championship Prediction Dashboard: Machine Learning Analysis of 76 Years of Racing Data"
+publishedAt: "2025-07-11"
+summary: "This project combines comprehensive NASCAR data analysis with modern web development to predict 2025 championship outcomes. Using R for machine learning on 99,495 historical race records, the project builds ensemble models achieving 99.2% accuracy, then translates insights into an interactive React dashboard. The analysis reveals unprecedented competitive parity in the 2025 season through feature importance analysis and probabilistic modeling."
+images:
+  - "/images/projects/nascar-championship-prediction-model/cover-01.png"
+  - "/images/projects/nascar-championship-prediction-model/cover-02.mp4"
+  - "/images/projects/nascar-championship-prediction-model/cover-03.png"
+  - "/images/projects/nascar-championship-prediction-model/cover-04.png"
+  - "/images/projects/nascar-championship-prediction-model/cover-05.png"
+team:
+  - name: "Craig Putzstuck"
+    role: "Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/CraigPutzstuck/"
+---
+
+## Overview
+
+This project analyzes 76 years of NASCAR Cup Series data (1949-2025) to predict the 2025 championship using machine learning techniques. Starting with the nascaR.data package containing 99,495 race records, the analysis employs ensemble modeling in R to identify championship patterns and build predictive models. The project culminates in a comprehensive React dashboard that visualizes predictions, explains model methodology, and provides data-driven insights into what makes a NASCAR champion. The analysis reveals that the 2025 season exhibits unprecedented competitive parity, with 36 legitimate championship contenders and low prediction probabilities indicating the most open championship race in recent NASCAR history.
+
+## Key Features
+
+- **Ensemble Machine Learning Models**: Combined logistic regression and random forest algorithms achieving 99.2% and 98.1% accuracy respectively on historical championship predictions.
+- **Comprehensive Feature Engineering**: Created 15+ predictive variables including win rates, consistency metrics, career progression indicators, and temporal performance features.
+- **Feature Importance Analysis**: Identified "laps led" as the strongest championship predictor through Gini importance scoring, revealing insights beyond traditional win-focused metrics.
+- **Interactive Championship Dashboard**: Built responsive React interface with TypeScript components displaying real-time predictions, model explanations, and historical context.
+- **Mid-Season Analysis Capability**: Designed models to provide meaningful predictions using partial season data, accounting for remaining races and historical volatility.
+- **Educational Data Science Content**: Translated complex ML concepts into accessible explanations for non-technical audiences through clear visualizations and plain-language descriptions.
+
+## Technologies Used
+
+- **R**: Core data analysis and machine learning using tidyverse, randomForest, caret, and broom packages for statistical modeling and data manipulation.
+- **React**: Frontend framework with modern hooks-based state management for interactive user interface development.
+- **TypeScript**: Type-safe component development with comprehensive interfaces for data structures and component props.
+- **Tailwind CSS**: Utility-first CSS framework enabling responsive design and modern UI aesthetics with gradient backgrounds and smooth animations.
+- **Next.js**: React framework providing optimal development experience with app router, automatic optimization, and deployment capabilities.
+- **nascaR.data**: Specialized R package providing access to comprehensive NASCAR historical data through GitHub integration.
+
+## Challenges and Learnings
+
+The most significant challenge involved handling data quality issues across different NASCAR eras, particularly managing missing values in early years before modern scoring systems were implemented. Feature engineering required careful consideration of temporal dependencies to avoid data leakage while capturing career progression patterns. Translating complex ensemble model outputs into meaningful championship probabilities demanded sophisticated statistical interpretation, especially explaining why low probability values (2.5%) actually indicate competitive parity rather than model uncertainty. The process of making technical machine learning concepts accessible to NASCAR fans required iterative refinement of explanations and visualizations. Understanding Gini importance scores and their practical interpretation provided valuable insights into Random Forest model behavior and feature selection methodology.
+
+## Outcome
+
+The project successfully demonstrates the integration of advanced statistical modeling with modern web development, resulting in a production-ready dashboard that provides actionable championship insights. The analysis reveals that 2025 represents one of the most competitive NASCAR seasons in history, with no dominant driver emerging by mid-season. The low championship probabilities (top driver at 2.5%) accurately reflect unprecedented parity rather than model weakness, validated by historical comparison showing typical seasons have clear frontrunners by this point. The dashboard serves as both a practical prediction tool and an educational resource, making complex data science accessible through intuitive design and clear explanations. This project showcases the complete data science workflow from raw data ingestion through model development to stakeholder-facing visualization and deployment.

@@ -55,7 +55,7 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Empowering Data Informed Decisions</>,
+  headline: <>From Raw Data to Real Impact: Analytics, AI, and Visualization</>,
   featured: {
     display: true,
     title: <>Featured project: <strong className="ml-4">MoTec Telemetry Python Dashboard</strong></>,
@@ -63,7 +63,7 @@ const home = {
   },
   subline: (
     <>
-      I'm Craig, an analytics-driven specialist who transforms complex data challenges into clean, actionable insights for meaningful outcomes.
+      I'm Craig, a data science practitioner using Python, R, and visualization to make insights actionable—on dashboards, in code, and sometimes on the racetrack.
       {/* <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/> */}
     </>
   ),
@@ -90,7 +90,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Passionate data enthusiast with a strong foundation in full stack web development. Fascinated with how technology can uncover insights and drive informed decision making. I aim to deepen my understanding of statistical modeling, machine learning algorithms, and data visualization techniques. I'm particularly interested in applying these tools to real-world problems, such as predictive analytics, natural language processing, and AI-powered solutions. My background in web development provides me with a unique perspective on data-driven applications. Proficient in languages like Python and R, as well as front-end technologies like React. This enables me to not only analyze data but also create interactive and user-friendly data visualizations and dashboards.
+        I'm a passionate data science practitioner with a foundation in business analytics and full stack web development. My work blends technical skill with storytelling—using tools like Python, R, SQL, and React to turn complex data into clear, actionable insights. I'm particularly interested in applying machine learning, statistical modeling, and real-time analytics to dynamic, real-world challenges. Lately, that's included building dashboards for motorsports telemetry, predictive models for racing outcomes, and AI-powered interfaces for image and language data. While I don't come from a traditional racing background, I've been around it my whole life—from my first job at the Richard Petty Driving Experience to my current exploration of NASCAR and iRacing data. That hands-on curiosity drives how I learn, build, and grow. Whether I'm modeling strategy, parsing telemetry, or designing intuitive interfaces, I aim to build data products that inform, inspire, and perform.
       </>
     ),
   },
@@ -99,23 +99,18 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "Kokoro Labs",
+        company: "Freelance Contracting",
         timeframe: "2022 - Present",
         role: "Data Analyst, Full Stack Developer",
         achievements: [
           <>
-            Engineered Python-based dashboards and MVPs 55% faster, boosting client acceptance by 28%.
-            Architected reusable React components, doubling full-stack app scalability and efficiency. Cut
-            client reporting time by 60% with interactive dashboards using Tableau, SQL, and GA. Upgraded
-            web solutions for 5+ businesses, raising site engagement by 40% via responsive design and e-commerce.
+            Led end-to-end development of data science solutions and full-stack web applications, with a strong focus on analytics, predictive modeling, and dashboard creation. Applied Python, SQL, and R to extract, clean, and analyze complex datasets, enabling actionable insights and reducing manual reporting time by over 60% across multiple projects. Designed and deployed interactive data visualizations using tools like Dash, Plotly, and Tableau, empowering clients to make faster, data-informed decisions.
           </>,
           <>
-            Deployed end-to-end web applications, handling both front-end interfaces and back-end logic,
-            utilized reusable components and streamlined data architecture to improve development speed
-            by 35% and reduce client onboarding time by nearly 30%. Integrated secure authorization flows,
-            implemented encryption, and managed both relational (PostgreSQL) and non-relational
-            (MongoDB) databases. Collaborated directly with clients and teammates to deliver scalable,
-            secure solutions in fast-paced sprints.
+            Developed and maintained scalable back-end systems with PostgreSQL and MongoDB, while architecting reusable React components to streamline development and boost application performance. Integrated secure authorization protocols, built dynamic APIs, and implemented real-time telemetry and business performance analytics. Partnered with stakeholders to align on product goals and delivered solutions that increased client retention by 25% and improved reporting accuracy by 40%.
+          </>,
+          <>
+            Applied core data science methods—including regression, classification, and exploratory data analysis—to solve real-world business problems, from marketing performance to racing telemetry. Used version control, structured documentation, and agile project management to lead over 20 successful client initiatives. Continuously seek opportunities to bridge business strategy with machine learning, simulation data, and applied analytics for measurable impact.
           </>,
         ],
         images: [
@@ -153,7 +148,7 @@ const about = {
     institutions: [
       {
         name: "Eastern University",
-        description: <>M.S. in Data Science / MBA Dual Degree | Exp. 2027</>,
+        description: <>M.S. in Data Science | Exp. 2027</>,
       },
       {
         name: "Colorado State University",
@@ -161,7 +156,7 @@ const about = {
       },
       {
         name: "University of Central Florida",
-        description: <>Certificate in MERN full stack web development | 2022</>,
+        description: <>Certificate in MERN Full Stack Web Development | 2022</>,
       },
     ],
   },
