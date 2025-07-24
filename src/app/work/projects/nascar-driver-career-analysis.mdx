@@ -1,0 +1,46 @@
+---
+title: "NASCAR Driver Career Analysis: Machine Learning Clustering and LSTM Prediction (Work in Progress)"
+publishedAt: "2025-07-18"
+summary: "A comprehensive data science project analyzing 76 years of NASCAR driver performance using K-means clustering and LSTM neural networks to identify driver archetypes and predict career trajectories. Built with Python machine learning models and a full-stack web application featuring FastAPI backend and Next.js frontend. Currently in development with ongoing debugging and feature refinement planned."
+images:
+  - "/images/projects/nascar-driver-career-analysis/cover-01.png"
+  - "/images/projects/nascar-driver-career-analysis/cover-02.mp4"
+  - "/images/projects/nascar-driver-career-analysis/cover-03.png"
+  - "/images/projects/nascar-driver-career-analysis/cover-04.png"
+  - "/images/projects/nascar-driver-career-analysis/cover-05.png"
+team:
+  - name: "Craig Putzstuck"
+    role: "Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/CraigPutzstuck/"
+---
+
+## Overview
+
+This project analyzes 76 years of NASCAR Cup Series data (1949-2025) to uncover driver career patterns and predict future performance using advanced machine learning techniques. Starting with 99,500+ race records from the nascaR.data package, the analysis employs K-means clustering to identify six distinct driver archetypes and LSTM neural networks to predict career trajectories. The project features a complete full-stack implementation with Python-based machine learning models, a FastAPI backend, and an interactive Next.js frontend dashboard. Currently in active development, the application demonstrates the end-to-end data science workflow while continuing to evolve with bug fixes and enhanced functionality.
+
+## Key Features
+
+- K-means Clustering Analysis: Identifies six distinct driver archetypes including Dominant Champions, Late Bloomers, and Journeymen through comprehensive performance metrics analysis.
+- LSTM Neural Network Prediction: Time series modeling using TensorFlow to predict career trajectories based on five-season performance sequences with 176 engineered features.
+- Advanced Feature Engineering: Creates rolling statistics, career phase identification, performance trends, consistency metrics, and peak performance detection across driver careers.
+- Full-Stack Web Application: Complete implementation with FastAPI backend serving machine learning models and Next.js frontend providing interactive visualizations.
+- Interactive Data Visualizations: Plotly-powered charts displaying cluster analysis, career arcs, and performance predictions with responsive design.
+- Comprehensive Data Pipeline: R-based data updating scripts, Python preprocessing, and automated model training with configurable parameters.
+
+## Technologies Used
+
+- Python: Core machine learning implementation using TensorFlow for LSTM models, scikit-learn for clustering, pandas for data manipulation, and comprehensive feature engineering.
+- FastAPI: High-performance backend API providing endpoints for model predictions, driver data, and archetype classifications with automatic documentation.
+- Next.js: Modern React framework with TypeScript for type-safe frontend development, responsive design, and optimal user experience.
+- TensorFlow: Deep learning framework for LSTM neural network implementation, sequence modeling, and career trajectory prediction.
+- R: Data acquisition and preprocessing using nascaR.data package integration with tidyverse ecosystem for statistical analysis.
+- Plotly: Interactive visualization library creating dynamic charts for cluster analysis, performance trends, and career progression displays.
+
+## Challenges and Learnings
+
+The primary challenge involved designing an effective feature engineering pipeline that captures career progression patterns while avoiding data leakage in time series predictions. Creating meaningful driver archetypes required careful selection of clustering features and hyperparameter tuning to balance cluster interpretability with statistical significance. The LSTM model architecture needed optimization to handle variable-length career sequences while maintaining prediction accuracy across different career stages. Integrating machine learning models with a production web application required careful consideration of model serialization, API design, and real-time prediction serving. Building intuitive visualizations that effectively communicate complex clustering results and neural network predictions to diverse audiences demanded iterative design refinement and user experience testing.
+
+## Outcome
+
+This project successfully demonstrates the complete machine learning workflow from data acquisition through model deployment, showcasing both unsupervised learning (clustering) and supervised learning (LSTM prediction) techniques applied to sports analytics. The clustering analysis reveals meaningful driver archetypes that align with NASCAR domain expertise while providing quantitative validation of intuitive career patterns. The LSTM models show promising results for career trajectory prediction, though ongoing refinement continues to improve accuracy and interpretability. The full-stack implementation proves the viability of serving complex machine learning models through modern web applications. As development continues, future iterations will focus on model performance optimization, enhanced visualization capabilities, and expanded predictive features to create a comprehensive NASCAR analytics platform.
