@@ -8,7 +8,7 @@ const person = {
   },
   role: "Data Science & Strategy, Full Stack Dev",
   avatar: "/images/avatar.jpg",
-  email: "craig.putzstuck@kokorolabs.tech",
+  email: "putzstuck@gmail.com",
   location: "US/Eastern", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", ], // optional: Leave the array empty if you don't want to display languages
 };
@@ -101,7 +101,7 @@ const about = {
       {
         company: "Freelance Contracting",
         timeframe: "2022 - Present",
-        role: "Data Analyst, Full Stack Developer",
+        role: "Data and Reporting Specialist, Full Stack Developer",
         achievements: [
           <>
             Led end-to-end development of data science solutions and full-stack web applications, with a strong focus on analytics, predictive modeling, and dashboard creation. Applied Python, SQL, and R to extract, clean, and analyze complex datasets, enabling actionable insights and reducing manual reporting time by over 60% across multiple projects. Designed and deployed interactive data visualizations using tools like Dash, Plotly, and Tableau, empowering clients to make faster, data-informed decisions.
@@ -148,15 +148,15 @@ const about = {
     institutions: [
       {
         name: "Eastern University",
-        description: <>M.S. in Data Science | Exp. 2027</>,
+        description: <>M.S. in Data Science (2026)</>,
       },
       {
         name: "Colorado State University",
-        description: <>B.S. in MIS & Business Analytics | 2025</>,
+        description: <>B.S. in MIS & Business Analytics</>,
       },
       {
         name: "University of Central Florida",
-        description: <>Certificate in MERN Full Stack Web Development | 2022</>,
+        description: <>Certificate in MERN Full Stack Web Development</>,
       },
     ],
   },

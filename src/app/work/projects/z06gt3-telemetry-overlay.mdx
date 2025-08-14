@@ -1,0 +1,44 @@
+---
+title: "Real-Time Motorsports Telemetry Video Overlay System"
+publishedAt: "2025-08-14"
+summary: "This project features a React/TypeScript frontend with Python data processing pipeline that synchronizes MoTeC telemetry data with video playback. The application provides real-time overlay visualization of racing data including speed, RPM, gear position, and throttle/brake inputs with precise timestamp synchronization."
+images:
+ - "/images/projects/z06gt3-telemetry-overlay/cover-01.png"
+ - "/images/projects/z06gt3-telemetry-overlay/cover-02.mp4"
+ - "/images/projects/z06gt3-telemetry-overlay/cover-03.png"
+ - "/images/projects/z06gt3-telemetry-overlay/cover-04.png"
+ - "/images/projects/z06gt3-telemetry-overlay/cover-05.png"
+team:
+ - name: "Craig Putzstuck"
+   role: "Developer"
+   avatar: "/images/avatar.jpg"
+   linkedIn: "https://www.linkedin.com/in/CraigPutzstuck/"
+---
+
+## Overview
+
+Telemetry data from a Chevrolet Corvette Z06 GT3.R at Sebring International Raceway was captured via MoTeC logging and synchronized with onboard video footage. The system processes MoTeC CSV exports containing speed, RPM, gear, throttle, and brake data sampled at 50Hz, rendering real-time overlays positioned on the right side of the video player. Designed for motorsports engineers and data analysts, the application enables frame-accurate analysis of driver inputs and vehicle performance during racing sessions.
+
+## Key Features
+
+- **Real-Time Telemetry Overlay**: Custom React components render speed, RPM, gear, and pedal inputs with dynamic visual bars and color-coded indicators.
+- **Video Synchronization Engine**: Manual sync controls allow precise timestamp alignment between video playback and telemetry data points with sub-second accuracy.
+- **Dynamic Visual Feedback**: Throttle and brake components feature gradient fill bars with enhanced contrast and smooth 0.1s transitions for responsive data visualization.
+- **Motorsports UI Framework**: Dark theme Material-UI implementation with racing-inspired color schemes, monospace typography, and professional telemetry aesthetics.
+- **Automated Data Processing**: Python pipeline handles MoTeC CSV parsing, metadata extraction, unit conversions (m/s to MPH), and optimized JSON export for web consumption.
+
+## Technologies Used
+
+- **React/TypeScript**: Frontend framework with custom hooks for telemetry data management and component state synchronization.
+- **Material-UI**: Component library with custom motorsports theming and responsive grid layouts for session data presentation.
+- **HTML5 Video API**: Native video playback with time-based event handling for telemetry synchronization callbacks.
+- **Python Data Pipeline**: Pandas-based CSV processing with metadata parsing and statistical analysis for telemetry validation.
+- **CSS Animations**: Gradient overlays, pulse effects, and smooth transitions for professional racing dashboard aesthetics.
+
+## Challenges and Learnings
+
+Synchronizing high-frequency telemetry data (50Hz) with video playback required implementing precise timestamp matching algorithms and manual offset controls. Parsing MoTeC CSV files involved handling trailing commas and quoted values while extracting metadata from non-standard header formats. Building responsive telemetry overlays taught advanced CSS positioning techniques and React state management for real-time data rendering without performance degradation.
+
+## Outcome
+
+The telemetry overlay system provides a professional-grade tool for motorsports video analysis with frame-accurate data visualization. The modular architecture supports different racing series, vehicles, and telemetry formats, serving as a foundation for advanced applications including lap comparison analysis, driver coaching tools, or broadcast graphics systems.
